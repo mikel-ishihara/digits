@@ -13,7 +13,7 @@ class Contact extends React.Component {
                 floated='right'
                 size='mini'
                 src={this.props.contact.image}
-            />
+                />
             <Card.Header>
               {this.props.contact.firstName} {this.props.contact.lastName}
             </Card.Header>
