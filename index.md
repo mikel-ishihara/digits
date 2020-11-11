@@ -100,7 +100,8 @@ client/
 
 imports/
   api/           # Define collections
-    stuff/       # The Stuffs collection definition
+    contact/     # The Contacts collection definition
+    note/        # The Notes collection definition
   startup/       # Define code to run when system starts up (client-only, server-only, both)
     client/
     server/
@@ -147,7 +148,7 @@ You can now add new contacts, and list the contacts you have created. Note you c
 
 #### Add Contact page
 
-After logging in, here is the page that allows you to add new Stuff:
+After logging in, here is the page that allows you to add new contact:
 
 <img src="doc/addcontact.PNG">
 
@@ -165,6 +166,16 @@ After clicking on the "Edit" link associated with an item, this page displays th
 
 <img src="doc/editcontact.PNG">
 
+### Add a Timestamped note
+
+There is a textbox where you can add a note for a specific contact with the associated date:
+
+<img src="doc/addnote.PNG">
+
+Once you click the submit button, that note will be attached to the contact:
+
+<img src="doc/notesubmit.PNG">
+
 #### Landing (after Login), Admin user
 
 You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
@@ -181,9 +192,13 @@ Note that non-admin users cannot get to this page, even if they type in the URL 
 
 ### Collections
 
-The application implements a single Collection called "Stuffs". Each Stuffs document has the following fields: name, quantity, condition, and username.
+The application implements two Collections called "Contacts" and "Notes". 
+
+Each Contacts document has the following fields: first name, last name, address, image, description, owner.
 
 The Contacts collection is defined in [imports/api/contact/Contacts.js](https://github.com/mikel-ishihara/digits/blob/cleanup/app/imports/api/contact/Contacts.js).
+
+Each Notes document has the following fields: note, contact Id, created at, owner.
 
 The Notes collection is defined in [imports/api/note/Notes.js](https://github.com/mikel-ishihara/digits/blob/cleanup/app/imports/api/note/Notes.js).
 
