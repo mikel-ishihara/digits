@@ -1,34 +1,12 @@
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/landing-page.png)
+<img src="doc/landing.PNG">
 
 Meteor-application-template-react is a sample Meteor 1.10 application that illustrates:
 
-  * A standard directory layout using 'imports/' as recommended in the [Meteor Guide](https://guide.meteor.com/structure.html)
-  * [Semantic UI React](https://react.semantic-ui.com/) for user interface.
-  * [Uniforms](https://uniforms.tools/) for form development.
-  * [alanning:roles](https://github.com/alanning/meteor-roles) to implement a special "Admin" user.
-  * Authorization, authentication, and registration using built-in Meteor packages.
-  * Initialization of users and data from a settings file.
-  * Alerts regarding success or failure of DB updates using [Sweet Alert](https://sweetalert.js.org/).
-  * Quality assurance using [ESLint](http://eslint.org) with packages to partially enforce the [Meteor Coding Standards](https://guide.meteor.com/code-style.html) and the [AirBnB Javascript Style Guide](https://github.com/airbnb/javascript).
-
-The goal of this template is to help you get quickly started doing Meteor development by providing a reasonable directory structure for development and deployment, a set of common extensions to the core framework, and boilerplate code to implement basic page display, navigation, forms, roles, and collection manipulation.
-
-To keep this codebase simple and small, some important capabilities are intentionally excluded from this template:
-
-  * Testing.
-  * Security (meteor-application-template-react enables the insecure packages)
-
-Examples of the these capabilities will be provided elsewhere.
-
 ## Installation
 
-First, [install Meteor](https://www.meteor.com/install).
+Click the "Clone or download" button to download the GitHub repo to your local file system.  Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
 
-Second, go to [https://github.com/ics-software-engineering/meteor-application-template-react](https://github.com/ics-software-engineering/meteor-application-template-react), and click the "Use this template" button. Complete the dialog box to create a new repository that you own that is initialized with this template's files.
-
-Third, go to your newly created repository, and click the "Clone or download" button to download your new GitHub repo to your local file system.  Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
-
-Fourth, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
+Next, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
 
 ```
 $ meteor npm install
@@ -57,11 +35,10 @@ meteor npm run start
 I20180227-13:33:02.716(-10)? Creating the default user(s)
 I20180227-13:33:02.742(-10)?   Creating user admin@foo.com.
 I20180227-13:33:02.743(-10)?   Creating user john@foo.com.
-I20180227-13:33:02.743(-10)? Creating default data.
-I20180227-13:33:02.743(-10)?   Adding: Basket (john@foo.com)
-I20180227-13:33:02.743(-10)?   Adding: Bicycle (john@foo.com)
-I20180227-13:33:02.743(-10)?   Adding: Banana (admin@foo.com)
-I20180227-13:33:02.744(-10)?   Adding: Boogie Board (admin@foo.com)
+I20180227-13:33:02.743(-10)? Creating default Contacts.
+I20180227-13:33:02.743(-10)?   Adding: Johnson (john@foo.com)
+I20180227-13:33:02.743(-10)?   Adding: Casanova (john@foo.com)
+I20180227-13:33:02.743(-10)?   Adding: Binsted (admin@foo.com)
 => Started your app.
 
 => App running at: http://localhost:3000/
