@@ -182,7 +182,7 @@ You can define an "admin" user in the settings.json file. This user, after loggi
 
 <img src="doc/landingadmin.PNG">
 
-#### Admin page (list all users stuff)
+#### Admin page (list all users contacts)
 
 To provide a simple example of a "super power" for Admin users, the Admin page lists all of the contacts by all of the users:
 
